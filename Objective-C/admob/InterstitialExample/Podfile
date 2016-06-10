@@ -5,4 +5,5 @@ platform :ios, '7.0'
 target 'InterstitialExample' do
   pod 'Firebase'
   pod 'Firebase/AdMob'
+  pod 'YandexMobileAds'
 end

@@ -15,6 +15,7 @@
 //
 
 #import "AppDelegate.h"
+#import <YandexMobileMetrica/YandexMobileMetrica.h>
 
 @import Firebase;
 
@@ -27,7 +28,9 @@
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Use Firebase library to configure APIs
+
   [FIRApp configure];
+  [YMMYandexMetrica activateWithApiKey:@"43614695-4bad-431c-9e14-fa588179b756"];
 
   return YES;
 }

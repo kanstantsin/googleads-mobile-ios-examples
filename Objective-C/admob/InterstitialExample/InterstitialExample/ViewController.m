@@ -141,8 +141,10 @@ typedef NS_ENUM(NSUInteger, GameState) {
 }
 
 - (void)createAndLoadInterstitial {
+    // Set ca-app-pub-8322560632314979/9223212244 for mediated network with frequency capping set up
+    // Set ca-app-pub-8322560632314979/8349117849 for only admob with frequency capping set up
   self.interstitial =
-      [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-3940256099942544/4411468910"];
+      [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-8322560632314979/8349117849"];
   self.interstitial.delegate = self;
 
   GADRequest *request = [GADRequest request];
